@@ -35,12 +35,21 @@ namespace EJpractica
             {
                 tipoTelegrama = 'u';
             }
+            if (rbUrgente.Checked)
+            {
+                tipoTelegrama = 'u'; // Urgente
+            }
+            else if (rbOrdinario.Checked)
+            {
+                tipoTelegrama = 'o'; // Ordinario
+            }
             else
             {
-                tipoTelegrama = 'o';
+                MessageBox.Show("Seleccione el tipo de telegrama.");
+                return;
             }
             //Obtengo el número de palabras que forma el telegrama
-            string[] palabras = textoTelegrama.Split(' ');
+            string[] palabras = textoTelegrama.Split(new char[] (''), StringSplitOptions.RemoveEmptyEntries);
             numPalabras = palabras.Length;
  
             if (tipoTelegrama == 'o')

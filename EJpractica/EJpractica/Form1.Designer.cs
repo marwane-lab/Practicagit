@@ -32,6 +32,8 @@
             this.txtprecio = new System.Windows.Forms.TextBox();
             this.txtTelegrama = new System.Windows.Forms.TextBox();
             this.chkUrgente = new System.Windows.Forms.CheckBox();
+            this.rbUrgente = new System.Windows.Forms.RadioButton();
+            this.rbOrdinario = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
@@ -68,11 +70,35 @@
             this.chkUrgente.Text = "checkBox1";
             this.chkUrgente.UseVisualStyleBackColor = true;
             // 
+            // rbUrgente
+            // 
+            this.rbUrgente.AutoSize = true;
+            this.rbUrgente.Location = new System.Drawing.Point(513, 142);
+            this.rbUrgente.Name = "rbUrgente";
+            this.rbUrgente.Size = new System.Drawing.Size(103, 20);
+            this.rbUrgente.TabIndex = 4;
+            this.rbUrgente.TabStop = true;
+            this.rbUrgente.Text = "radioButton1";
+            this.rbUrgente.UseVisualStyleBackColor = true;
+            // 
+            // rbOrdinario
+            // 
+            this.rbOrdinario.AutoSize = true;
+            this.rbOrdinario.Location = new System.Drawing.Point(393, 142);
+            this.rbOrdinario.Name = "rbOrdinario";
+            this.rbOrdinario.Size = new System.Drawing.Size(103, 20);
+            this.rbOrdinario.TabIndex = 5;
+            this.rbOrdinario.TabStop = true;
+            this.rbOrdinario.Text = "radioButton2";
+            this.rbOrdinario.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.rbOrdinario);
+            this.Controls.Add(this.rbUrgente);
             this.Controls.Add(this.chkUrgente);
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.txtprecio);
@@ -91,6 +117,8 @@
         private System.Windows.Forms.TextBox txtprecio;
         private System.Windows.Forms.TextBox txtTelegrama;
         private System.Windows.Forms.CheckBox chkUrgente;
+        private System.Windows.Forms.RadioButton rbUrgente;
+        private System.Windows.Forms.RadioButton rbOrdinario;
     }
 }
 

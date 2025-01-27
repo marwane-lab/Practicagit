@@ -28,7 +28,6 @@ namespace EJpractica
             char tipoTelegrama = ' ';
             int numPalabras = 0;
             double coste;
-            string variableusuario2 = "";
 
             //Leo el telegrama  
             textoTelegrama = txtTelegrama.Text;
@@ -37,8 +36,13 @@ namespace EJpractica
             {
                 tipoTelegrama = 'u';
             }
-            //Obtengo el número de palabras que forma el telegrama  
-            numPalabras = textoTelegrama.Length;
+            else
+            {
+                tipoTelegrama = 'o';
+            }
+            //Obtengo el número de palabras que forma el telegrama
+            string[] palabras = textoTelegrama.Split(' ');
+            numPalabras = palabras.Length;
  
             if (tipoTelegrama == 'o')
             {

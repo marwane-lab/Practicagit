@@ -29,7 +29,7 @@ namespace EJpractica
             int numPalabras = 0;
             double coste;
             string variableusuario2 = "";
-
+            // .
             //Leo el telegrama  
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente? 
